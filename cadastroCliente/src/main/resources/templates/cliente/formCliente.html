@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br"
+	  xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="hhtp://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>Data Book</title>
+	<link rel="shortcut icon" href="projeto\images\favicon.ico">
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="projeto\css\styleForm.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<header class="header_one">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
+			<div class="container">
+				<a class="navbar-brand" href="#home">
+					<img src="projeto\images\logo.png" alt="Logotipo Data Book">
+				</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-menu" aria-expanded="false">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="top-menu">
+					<ul class="navbar-nav mr-auto mx-auto">
+						<li class="nav-item">
+							<a class="nav-link" href=" / ">Página Inicial</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/cadastrarCliente">Cadastro de Clientes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="clientes">Consulta de Dados</a>
+						</li>
+						<li class="nav-item">
+							<span id="sair"><a class="nav-link" href="logout">Sair</a></span>
+						</li>
+					</ul>
+					<div class="col-sm-3 my-1">
+						<div class="input-group">
+							<input class="form-control" type="search" placeholder="Busca" aria-label="Search" style="border-right: none;">
+							<div class="input-group-append">
+								<div class="input-group-text" style="background-color: transparent;"><button type="submit" class="fas fa-search" style="color: #856DD7"></button></div>
+							</div>
+						</div>
+					</div>
+					<button onclick="location.href = 'https://api.whatsapp.com/send?phone=XXYY000000000&text=exemplo%20de%20contato%20DataBook&source=&data=&app_absent='" class="btn btn-primary btn-lg">Fale Conosco</button>
+				</div>
+			</div>
+			<span id="icon-sair"><a href="logout"><img src="https://img.icons8.com/nolan/50/logout-rounded.png" title="Sair" alt="ícone redondo com uma seta para fora"/></a></span>							
+		</nav>
+	</header>
+	    
+	<section class="section" id="section3">
+          <h1>Realize O Cadastro</h1>
+        <div class="form-container mx-auto text-center">
+
+          <form method="post">
+            <div id="input-content">
+              <div class="input-container">
+                <label for="name">Nome Completo</label>
+                <input required type="text" name="nome" placeholder="Robert Lee">
+              </div>
+
+            <div class="input-container">
+              <label for="email">E-mail</label>
+              <input required type="email" name="email" placeholder="kevin.jones@mail.com">
+            </div>
+
+            <div class="input-container">
+              <label for="tel">Telefone</label>
+              <input required type="tel" name="telefone" placeholder="(12)34567-8910">
+            </div>
+            
+            <button type="submit" class="btn btn-success btn-lg mx-auto text-center">Salvar</button>
+            </div>
+          </form>
+        </div>
+        </section>
+	<footer>
+		<p>&copy; MariaLuiza</p>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="projeto\js\script.js"></script>
+	</body>
+</html>

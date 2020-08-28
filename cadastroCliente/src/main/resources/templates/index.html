@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br"
+	  xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="hhtp://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<title>Data Book</title>
+	<link rel="shortcut icon" href="projeto\images\favicon.ico">
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="projeto\css\style.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<header class="header_one">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
+			<div class="container">
+				<a class="navbar-brand" href="#home">
+					<img src="projeto\images\logo.png" alt="Logotipo Data Book">
+				</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-menu" aria-expanded="false">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="top-menu">
+					<ul class="navbar-nav mr-auto mx-auto">
+						<li class="nav-item">
+							<a class="nav-link" href=" / ">Página Inicial</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="cadastrarCliente">Cadastro de Clientes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="clientes">Consulta de Dados</a>
+						</li>
+						<li class="nav-item">
+							<span id="login"><a class="nav-link" href="login">Realizar Login</a></span>
+						</li>
+					</ul>
+					<div class="col-sm-3 my-1">
+						<div class="input-group">
+							<input class="form-control" type="search" placeholder="Busca" aria-label="Search" style="border-right: none;">
+							<div class="input-group-append">
+								<div class="input-group-text" style="background-color: transparent;"><button type="submit" class="fas fa-search" style="color: #856DD7"></button></div>
+							</div>
+						</div>
+					</div>
+					<button onclick="location.href = 'https://api.whatsapp.com/send?phone=XXYY000000000&text=exemplo%20de%20contato%20DataBook&source=&data=&app_absent='" class="btn btn-primary btn-lg">Fale Conosco</button>
+				</div>
+			</div>
+			<span id="icon-login"><a href="login"><img src="https://img.icons8.com/nolan/50/login-rounded-right.png" title="Login" alt="ícone redondo com uma seta para dentro"/></a></span>
+		</nav>
+	</header>
+	<div class="container">
+		<section class="section" id="home">
+				<img id="background" src="projeto/images/background.svg" alt="background">
+				<div class="row align-items-center text-center">
+					<div class="col-md-12 col-lg-12 mb-5 mb-md-0">
+						<h1>Data Book</h1> <h1><span>Um único lugar para todas as suas informações</span></h1>
+						<button onclick="location.href = 'cadastrarCliente';" type="button" class="btn btn-success btn-lg" href="#">Cadastrar</button>
+						<button onclick="location.href = 'clientes';" type="button" class="btn btn-default btn-lg" href="#">Consultar</button>
+					</div>
+					<div class="col-md-12 col-lg-12 mb-5 mb-md-0">
+						<img class="img-fluid" src="projeto\images\fundo1.png" alt="">
+					</div>
+				</div>
+		</section>
+
+		<section class="section" id="about">
+			<p></p><br>
+	    <div class="row mb-5" id="about1">
+        <div class="col-lg-5 col-md-6 align-self-center about-content" data-anime="um">
+          <h2>O processo <br><span>Sobre O Nosso Trabalho</span></h2>
+          <p>A Data Book foi criada com o intuito de facilitar a vida de nossos clientes.</p>
+          <p>Oferemos serviços de cadastros e consultas de dados de forma simples e rápida.</p>
+        </div>
+        <div class="col-lg-7 col-md-6 mb-4 mb-md-0">
+          <div class="about-lado1" data-anime="um-dois">
+            <img class="img-fluid" src="projeto/images/about-lado1.png" alt="">
+          </div>
+        </div>
+      </div><br>
+
+      <div class="row mt-5" id="about2">
+        <div class="col-lg-7 col-md-6 mb-4 mb-md-0">
+          <div class="about-lado2" data-anime="dois-dois">
+            <img class="img-fluid" src="projeto/images/about-lado02.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6 align-self-center about-content">
+        	<div data-anime="dois">
+          <h2>Sempre Estaremos Aqui<br><span class="span-bold">Para ajudar você</span></h2>
+          <p></p>
+          <p>Atendimento especializado e suporte 24h, além de alta segurança para com você e seus associados.</p>
+          </div>
+        </div>       
+      </div>
+  </section>
+	</div>
+	<footer>
+		<p>&copy; MariaLuiza</p>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="projeto\js\script.js"></script>
+	</body>
+</html>
